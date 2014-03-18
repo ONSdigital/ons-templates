@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script id="series" type="application/json">
+      {
+        "id": "/statistics/producer-price-index",
+        "title": "Producer Price Index",
+        "type": "Series",
+          "coverage" : "http://statistics.data.gov.uk/doc/statistical-geography/K02000001",
+          "geographic-breakdown" : "UK and GB",
+          "language": "en",
+          "frequency": "monthly",
+          "contact" : {
+            "department" : "Business Prices",
+            "email" : "ppi@ons.gsi.gov.uk",
+            "name" : "Kat Pegler",
+            "telephone" : "+44 (0) 1633 456468",
+            "uri" : "www.ons.gov.uk"
+         },
+         "notes": "A comprehensive selection of data on input and output index series. Contains producer price indices of materials and fuels purchased and output of manufacturing industry by broad sector."
+      }
+    </script>
+    <script id="release" type="application/json">
+      {
+        "title": "Release: Producer Price Index, January 2014",
+        "published": "2014-02-18",
+        "id": "/statistics/producer-price-index/2014-02-18",
+        "series": "/statistics/producer-price-index",
+        "type": "Release",
+        "superceded_by": "/statistics/producer-price-index/2014-03-25",
+        "notes": "\n<ul>\n<li>\n<p>The output price index for goods produced by UK manufacturers (factory gate prices), rose 0.9% in the year to January 2014, compared with a rise of 1.0% in the year to December 2013.</p>\n</li>\n<li>\n<p>Factory gate prices rose 0.3% between December 2013 and January 2014, compared with no movement between November and December.</p>\n</li>\n<li>\n<p>Core factory gate prices, which exclude the more volatile food, beverages, tobacco &amp; petroleum products, rose 1.2% in the year to January 2014, compared with a rise of 1.0% in the year to December 2013.</p>\n</li>\n<li>\n<p>The overall price of materials and fuels bought by UK manufacturers for processing (total input prices), fell 3.1% in the year to January 2014, compared with a fall of 1.0% in the year to December 2013.</p>\n</li>\n<li>\n<p>Total input prices fell 0.9% between December 2013 and January 2014, compared with a rise of 0.2% between November and December.</p>\n</li>\n</ul>\n"
+      }
+    </script>
+    <script id="dataset" type="application/json">
+      {
+
+          "coverage": "http://statistics.data.gov.uk/doc/statistical-geography/K02000001",
+          "geographic-breakdown": "UK and GB",
+          "notes": "<p><strong>Important Note for Users</strong></p><p>All of the data included in this dataset is published on a 2010=100 basis.</p><p>A comprehensive selection of data on input and output indices. Contains producer price indices of materials and fuels purchased and output of manufacturing industry by broad sector.</p><p>Indices for the latest two months are provisional due to the level of imputation present for items where the latest prices are not available. The latest five months are subject to revisions in light of (a) late and revised contributor data and (b) revisions to seasonal adjustment factors which are re-estimated every month.</p>",
+          "title": "PPI Statistical Bulletin (2010=100, SIC07)",
+          "id": "/statistics/producer-price-index/2014-02-18/ppi-csdb-ds",
+          "type": "DataSet",
+          "release": "/statistics/producer-price-index/2014-02-18",
+          "contact": {
+              "name": "J Hibbert",
+              "department": "Statistics",
+              "role": "Director",
+              "telephone": "210 1111111",
+              "fax": "210 1110999",
+              "uri": "www.ons.gov.uk",
+              "email": "smith@sdmx.com"
+          },
+          "published": "2014-02-18T04:20:42",
+          "structure": {
+              "provisional": {
+                  "id": "/def/attributes/provisional",
+                  "type": "attribute"
+              },
+              "revised": {
+                  "id": "/def/attributes/revised",
+                  "type": "attribute"
+              },
+              "qualifier": {
+                  "id": "/def/attributes/qualifier",
+                  "type": "attribute",
+                  "values": "/def/data-qualifiers"
+              },
+              "reporting_period": {
+                  "id": "/def/dimensions/reporting-period",
+                  "type": "dimension",
+                  "values": "/def/periods"
+              },
+              "publication": {
+                  "id": "/def/dimensions/publication",
+                  "type": "dimension",
+                  "values": "/def/publication"
+              },
+              "product": {
+                  "id": "/def/dimensions/product",
+                  "type": "dimension",
+                  "values": "/def/cdid"
+              },
+              "date": {
+                  "id": "/def/dimensions/date",
+                  "type": "timedimension",
+                  "values": "/def/date"
+              },
+              "price_index": {
+                  "id": "/def/measures/price_index",
+                  "type": "primarymeasure"
+              },
+              "seasonal_adjustment": {
+                  "id": "/def/attributes/seasonal_adjustment",
+                  "type": "attribute",
+                  "values": "/def/seasonal_adjustment"
+              },
+              "base_period": {
+                  "id": "/def/attributes/base_period",
+                  "type": "attribute",
+                  "values": "/def/base_period"
+              },
+              "price": {
+                  "id": "/def/attributes/price",
+                  "type": "attribute",
+                  "values": "/def/price"
+              },
+              "index_period": {
+                  "id": "/def/attributes/index_period",
+                  "type": "attribute",
+                  "values": "/def/index_period"
+              }
+          }
+
+      }
+    </script>
+    <script id="observation" type="application/json">
+      {
+          "id": "/statistics/producer-price-index/2014-02-18/ppi-csdb-ds/mc6a-2013dec",
+          "type": "Observation",
+          "release": "/statistics/producer-price-index/2014-02-18",
+          "series": "/statistics/producer-price-index",
+          "published": "2014-02-18T04:20:42",
+          "dataset": "/statistics/producer-price-index/2014-02-18/ppi-csdb-ds",
+          "product": "MC6A",
+          "date": "2013DEC",
+          "base_period": "-",
+          "price": "NONE",
+          "seasonal_adjustment": "NSA",
+          "index_period": "2010",
+          "reporting_period": "monthly",
+          "provisional": true,
+          "unreliable": "coverage",
+          "price_index": 111.5
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Statistics</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business, Industry and Trade <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><strong>Business</strong></a></li>
+                <li><a href="#">Activity, Size and Location</a></li>
+                <li><a href="#">Business Innovation</a></li>
+                <li><a href="#">Business Services</a></li>
+                <li><a href="#"><strong>Changes to Business</strong></a></li>
+                <li><a href="#">Bankruptcy/Insolvency</a></li>
+                <li><a href="#">Business Births, Deaths and Survival Rates</a></li>
+                <li><a href="#">Mergers and Acquisitions</a></li>
+                <li><a href="#"><strong>Construction Industry</strong></a></li>
+                <li><a href="#"><strong>IT and Internet Industry</strong></a></li>
+                <li><a href="#"><strong>International Trade</strong></a></li>
+                <li><a href="#"><strong>Manufacturing and Production Industry</strong></a></li>
+                <li><a href="#"><strong>Retail Industry</strong></a></li>
+                <li><a href="#"><strong>Tourism Industry</strong></a></li>
+              </ul>
+            </li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Economy <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><strong>Economic Output and Productivity</strong></a></li>
+                <li><a href="#">Output</a></li>
+                <li><a href="#">Productivity Measures</a></li>
+                <li><a href="#">Public Service Productivity</a></li>
+                <li><a href="#"><strong>Environmental Accounts</strong></a></li>
+                <li><a href="#"><strong>Government, Public Sector and Taxes</strong></a></li>
+                <li><a href="#">Local Government Finance</a></li>
+                <li><a href="#">Public Sector Finance</a></li>
+                <li><a href="#">Public Spending</a></li>
+                <li><a href="#">Research and Development Expenditure</a></li>
+                <li><a href="#">Taxes and Revenue</a></li>
+                <li><a href="#"><strong>Gross Domestic Product (GDP)</strong></a></li>
+                <li><a href="#"><strong>Gross Value Added (GVA)</strong></a></li>
+                <li class="active"><a href="#"><strong>Inflation and Price Indices</strong></a></li>
+                <li><a href="#"><strong>Investments, Pensions and Trusts</strong></a></li>
+                <li><a href="#"><strong>National Accounts</strong></a></li>
+                <li><a href="#">Balance of Payments</a></li>
+                <li><a href="#">Satellite Accounts</a></li>
+                <li><a href="#">Supply and Use Tables</a></li>
+                <li><a href="#">UK Sector Accounts</a></li>
+                <li><a href="#"><strong>Regional Accounts</strong></a></li>
+                <li><a href="#">Gross Disposable Household Income</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Employment and Labour Market</a></li>
+            <li><a href="#">People, Population and Community</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Release Calendar</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Producer Price Index, January 2014 <small>PPI Statistical Bulletin (2010=100, SIC07)</small></h1>
+      </div>
+      
+
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p><img src="nationalstatitics_tcm119-20491.gif" alt="National Statistic"></p>
+              <h2>Release Date</h2>
+              <p>18 February 2014 (latest)</p>
+              <h2>Next Release Date</h2>
+              <p>25 March 2014</p>
+              <h2>Contact</h2>
+              <address>
+                Kat Pegler<br>
+                Business Prices<br>
+                <a href="mailto:ppi@ons.gsi.gov.uk">ppi@ons.gsi.gov.uk</a><br>
+                <abbr title="Telephone">T</abbr>: +44 (0) 1633 456468
+              </address>
+              <h2>Notes</h2>
+              <p>All of the data included in this dataset is published on a 2010=100 basis.</p>
+              <p>A comprehensive selection of data on input and output indices. Contains producer price indices of materials and fuels purchased and output of manufacturing industry by broad sector.</p>
+              <p>Indices for the latest two months are provisional due to the level of imputation present for items where the latest prices are not available. The latest five months are subject to revisions in light of (a) late and revised contributor data and (b) revisions to seasonal adjustment factors which are re-estimated every month.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <p class="lead">
+            In <strong>December 2013</strong>, the <strong>monthly</strong> <strong>price index</strong> for <strong>Alcoholic Beverages - SPECIAL INDEX FOR USE IN NSO - Manu incl duty</strong> was...
+          </p>
+          <div class="well observation">
+            <div class="row">            
+              <div class="col-sm-8">
+                <p class="main">111.5</statistic>
+                <p>
+                  <span class="label label-danger">limited coverage</span>
+                  <span class="label label-warning">provisional</span>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <div>
+                  <a href="obs-mc6a-2013nov.html">
+                    <h3>previous month</h3>
+                    <p class="comparison">
+                      111.6 <span class="glyphicon glyphicon-arrow-down"></span>
+                    </p>
+                  </a>
+                </div>
+                <div>
+                  <a href="obs-mc6a-2012dec.html">
+                    <h3>previous year</h3>
+                    <p class="comparison">
+                      110.9 <span class="glyphicon glyphicon-arrow-up"></span> 
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            <span class="label label-info">base period: 2010</span>
+            <span class="label label-info">seasonal adjustment: NSA</span>
+          </p>
+        </div>
+
+        <div class="col-md-3 panel panel-default">
+          <div class="panel-body">
+            <a class="btn btn-primary btn-block">
+              <span class="glyphicon glyphicon-save"></span> Download the dataset
+            </a>
+            <h2>Compare</h2>
+            <div>
+              <a class="btn btn-link" href="slice-mc6a-monthly.html">
+                Change over time <span class="glyphicon glyphicon-stats"></span>
+              </a>
+            </div>
+            <div>
+              <a class="btn btn-link" href="slice-2013dec.html">
+                Other products <span class="glyphicon glyphicon-stats"></span>
+              </a>
+            </div>
+            <h2>Explore</h2>
+            <div class="dropdown">
+              <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">Other time periods <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">November 2013</a></li>
+                <li><a href="#">October 2013</a></li>
+                <li><a href="#">September 2013</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">Other products <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Soft drinks; mineral waters and other bottled waters</a></li>
+                <li><a href="#">Net Sector Output - Output of Manufactured Products</a></li>
+                <li><a href="#">Net Sector Output - All Manufacturing excluding duty</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Legal</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Business Transparency</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Cookies and Privacy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>About ONS</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Who we are</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Products and Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Offices</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>Connect with us</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Email Subscriptions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p class="text-center"><img src="ogl-symbol-41px-retina-black.png" alt="OGL" height="14">&nbsp;All content is available under the Open Government Licence v2.0 unless otherwise stated.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
