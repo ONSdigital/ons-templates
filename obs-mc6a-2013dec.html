@@ -268,10 +268,6 @@
             <div class="row">            
               <div class="col-sm-8">
                 <p class="main">111.5</statistic>
-                <p>
-                  <span class="label label-danger">limited coverage</span>
-                  <span class="label label-warning">provisional</span>
-                </p>
               </div>
               <div class="col-sm-4">
                 <div>
@@ -292,17 +288,22 @@
                 </div>
               </div>
             </div>
+            <p class="attributes">
+              <span data-toggle="tooltip" title="Limited coverage means that ..." class="label label-danger">limited coverage</span>
+              <span data-toggle="tooltip" title="Provisional means that ..." class="label label-warning">provisional</span>
+              <span data-toggle="tooltip" title="The price index uses 2010 as a base year with a value of 100." class="label label-info">base period: 2010</span>
+              <span data-toggle="tooltip" title="This value is not seasonally adjusted." class="label label-info">seasonal adjustment: NSA</span>
+            </p>
           </div>
           <p>
-            <span class="label label-info">base period: 2010</span>
-            <span class="label label-info">seasonal adjustment: NSA</span>
+            Producer Price Indices (PPIs) are a series of economic indicators that measure the price movement of goods bought and sold by UK manufacturers. It is a base weighted index working on the basket of goods concept. A wide range of representative products are selected and the prices of these goods collected each month. The movement in these prices are weighted to reflect the relative importance of the products in a chosen year (known as the base year) currently 2010. These are then aggregated for various sectors of industry to provide the published indices.
           </p>
         </div>
 
         <div class="col-md-3 panel panel-default">
           <div class="panel-body">
             <a class="btn btn-primary btn-block">
-              <span class="glyphicon glyphicon-save"></span> Download the dataset
+              <span class="glyphicon glyphicon-save"></span> Download the full dataset
             </a>
             <h2>Compare</h2>
             <div>
@@ -385,5 +386,9 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $('.label').tooltip();
+    </script>
   </body>
 </html>

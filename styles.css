@@ -15,7 +15,7 @@ footer {
 }
 
 .observation {
-	height: 210px;
+	height: 240px;
 }
 
 .observation .main {
@@ -32,6 +32,10 @@ footer {
 .observation a {
 	text-decoration: none;
 	color: black;
+}
+
+.observation .attributes {
+	margin-top: 16px;
 }
 
 .para {
