@@ -24,13 +24,13 @@ h2 {
 }
 
 .observation {
-	height: 240px;
+	height: 210px;
 }
 
 .observation .main {
 	display: block;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 5px;
 	font-size: 80px;
 }
 
