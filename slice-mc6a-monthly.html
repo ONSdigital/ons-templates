@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Rickshaw CSS -->
+    <link rel="stylesheet" href="rickshaw.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Statistics</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business, Industry and Trade <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><strong>Business</strong></a></li>
+                <li><a href="#">Activity, Size and Location</a></li>
+                <li><a href="#">Business Innovation</a></li>
+                <li><a href="#">Business Services</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Changes to Business</strong></a></li>
+                <li><a href="#">Bankruptcy/Insolvency</a></li>
+                <li><a href="#">Business Births, Deaths and Survival Rates</a></li>
+                <li><a href="#">Mergers and Acquisitions</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Construction Industry</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>IT and Internet Industry</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>International Trade</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Manufacturing and Production Industry</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Retail Industry</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Tourism Industry</strong></a></li>
+              </ul>
+            </li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Economy <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><strong>Economic Output and Productivity</strong></a></li>
+                <li><a href="#">Output</a></li>
+                <li><a href="#">Productivity Measures</a></li>
+                <li><a href="#">Public Service Productivity</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Environmental Accounts</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Government, Public Sector and Taxes</strong></a></li>
+                <li><a href="#">Local Government Finance</a></li>
+                <li><a href="#">Public Sector Finance</a></li>
+                <li><a href="#">Public Spending</a></li>
+                <li><a href="#">Research and Development Expenditure</a></li>
+                <li><a href="#">Taxes and Revenue</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Gross Domestic Product (GDP)</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Gross Value Added (GVA)</strong></a></li>
+                <li class="divider"></li>
+                <li class="active"><a href="#"><strong>Inflation and Price Indices</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Investments, Pensions and Trusts</strong></a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>National Accounts</strong></a></li>
+                <li><a href="#">Balance of Payments</a></li>
+                <li><a href="#">Satellite Accounts</a></li>
+                <li><a href="#">Supply and Use Tables</a></li>
+                <li><a href="#">UK Sector Accounts</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><strong>Regional Accounts</strong></a></li>
+                <li><a href="#">Gross Disposable Household Income</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Employment and Labour Market</a></li>
+            <li><a href="#">People, Population and Community</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Release Calendar</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>
+          <img src="nationalstatitics_tcm119-20491.gif" alt="National Statistic">
+          <a href="#"><!-- link to series -->Producer Price Index</a>,
+          <a href="#"><!-- link to release -->January 2014</a>
+          <small><a href="#"><!-- link to dataset -->PPI Statistical Bulletin (2010=100, SIC07)</a></small>
+        </h1>
+      </div>
+      
+
+      <div class="row">
+
+        <div class="col-md-9">
+          <p class="lead">
+            <strong>Time series</strong> for the <strong>price index</strong> for <strong>Alcoholic Beverages - SPECIAL INDEX FOR USE IN NSO - Manu incl duty</strong>.
+          </p>
+          <div class="well chart">
+            <div id="chart">
+            </div>
+          </div>
+          <p>
+            Producer Price Indices (PPIs) are a series of economic indicators that measure the price movement of goods bought and sold by UK manufacturers. It is a base weighted index working on the basket of goods concept. A wide range of representative products are selected and the prices of these goods collected each month. The movement in these prices are weighted to reflect the relative importance of the products in a chosen year (known as the base year) currently 2010. These are then aggregated for various sectors of industry to provide the published indices.
+          </p>
+          <h2>Notes</h2>
+          <p>All of the data included in this dataset is published on a 2010=100 basis.</p>
+          <p>A comprehensive selection of data on input and output indices. Contains producer price indices of materials and fuels purchased and output of manufacturing industry by broad sector.</p>
+          <p>Indices for the latest two months are provisional due to the level of imputation present for items where the latest prices are not available. The latest five months are subject to revisions in light of (a) late and revised contributor data and (b) revisions to seasonal adjustment factors which are re-estimated every month.</p>
+        </div>
+
+        <div class="col-md-3 panel panel-default">
+          <div class="panel-body">
+            <a class="btn btn-primary btn-block">
+              <span class="glyphicon glyphicon-save"></span> Download the full dataset
+            </a>
+            <a class="btn btn-default btn-block">
+              <span class="glyphicon glyphicon-save"></span> Download this time series
+            </a>
+            <h2>Compare</h2>
+            <div>
+              <a class="btn btn-link" href="slice-all.html">
+                <span class="glyphicon glyphicon-stats"></span> Other products
+              </a>
+            </div>
+            <h2>Explore</h2>
+            <div class="dropdown">
+              <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> Other products</button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Soft drinks; mineral waters and other bottled waters</a></li>
+                <li><a href="#">Net Sector Output - Output of Manufactured Products</a></li>
+                <li><a href="#">Net Sector Output - All Manufacturing excluding duty</a></li>
+              </ul>
+            </div>
+            <h2>Subscribe</h2>
+            <div>
+              <a class="btn btn-link" href="obs-mc6a.html">
+                <span class="glyphicon glyphicon-bookmark"></span> Latest data
+              </a>
+            </div>
+            <div>
+              <a class="btn btn-link" href="#">
+                <span class="glyphicon glyphicon-envelope"></span> Email
+              </a>
+            </div>
+            <hr>
+            <p class="text-center">
+              <a class="btn btn-link btn-sm" href="obs-mc6a-2013dec.json">JSON</a>
+              <a class="btn btn-link btn-sm" href="obs-mc6a-2013dec.xml">XML</a>
+              <a class="btn btn-link btn-sm" href="obs-mc6a-2013dec.rdf">RDF</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- /container -->
+
+    <hr>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Other Datasets</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">PPI - Input - 1 month change</a></li>
+            <li><a href="#">PPI - Input - 12 month change</a></li>
+            <li><a href="#">PPI - Output - 1 month change</a></li>
+            <li><a href="#">PPI - Output - 12 month change</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Release Date</h2>
+          <p>18 February 2014 (latest)</p>
+          <h2>Contact</h2>
+          <address>
+            Kat Pegler<br>
+            Business Prices<br>
+            <a href="mailto:ppi@ons.gsi.gov.uk">ppi@ons.gsi.gov.uk</a><br>
+            <abbr title="Telephone">T</abbr>: +44 (0) 1633 456468
+          </address>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Next Release</h2>
+          <p>25 March 2014</p>
+          <h2>Previous Releases</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">14 January 2014</a></li>
+            <li><a href="#">17 December 2013</a></li>
+            <li><a href="#">12 November 2013</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Methodology</h2>
+          <ul class="list-unstyled">
+            <li><a href="http://www.ons.gov.uk/ons/guide-method/method-quality/quality/quality-information/economy/quality-and-methodology-information-for-producer-price-indices--ppi-.pdf">Quality and Methodology Information (QMI) <small>(95.6 Kb PDF)</small></a></li>
+            <li><a href="http://www.ons.gov.uk/ons/rel/ppi2/producer-price-index/producer-price-index-rebasing--2010-100-/rebasing-the-producer-price-index.html">Impact of Rebasing the Producer Price Index to 2010=100</a></li>
+          </ul>
+          <p class="pull-right">
+            <a href="#"><!-- link to series page -->More information...</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Legal</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Business Transparency</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Cookies and Privacy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>About Us</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Who we are</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Products and Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Our Offices</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>Connect with us</h2>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Email Subscriptions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p class="text-center"><img src="ogl-symbol-41px-retina-black.png" alt="OGL" height="14">&nbsp;All content is available under the Open Government Licence v2.0 unless otherwise stated.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- moment for formatting dates -->
+    <script src="moment.min.js"></script>
+
+    <!-- D3 CDN -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.2/d3.min.js"></script>
+
+    <!-- rickshaw for graphs -->
+    <script src="rickshaw.min.js"></script>
+
+    <script type="text/javascript">
+var graph = new Rickshaw.Graph( {
+    element: document.querySelector("#chart"), 
+    renderer: 'line',
+    width: 700, 
+    height: 400, 
+    series: [{
+        name: 'price index',
+        color: 'steelblue',
+        data: [
+{x:823046400,y:70.9},
+{x:825552000,y:72.1},
+{x:828230400,y:71.5},
+{x:830822400,y:71.7},
+{x:833500800,y:71.4},
+{x:836092800,y:71.4},
+{x:838771200,y:71.3},
+{x:841449600,y:71.7},
+{x:844041600,y:71.4},
+{x:846720000,y:71.9},
+{x:849312000,y:71.6},
+{x:851990400,y:71.7},
+{x:854668800,y:71.2},
+{x:857088000,y:72.2},
+{x:859766400,y:71.5},
+{x:862358400,y:72.2},
+{x:865036800,y:72.4},
+{x:867628800,y:72.8},
+{x:870307200,y:73.6},
+{x:872985600,y:73.5},
+{x:875577600,y:73.2},
+{x:878256000,y:73},
+{x:880848000,y:72.2},
+{x:883526400,y:73},
+{x:886204800,y:73.3},
+{x:888624000,y:73.7},
+{x:891302400,y:74},
+{x:893894400,y:73.8},
+{x:896572800,y:74},
+{x:899164800,y:73.2},
+{x:901843200,y:73.3},
+{x:904521600,y:73.3},
+{x:907113600,y:73.2},
+{x:909792000,y:73},
+{x:912384000,y:73.1},
+{x:915062400,y:73.2},
+{x:917740800,y:73.6},
+{x:920160000,y:73.3},
+{x:922838400,y:73.9},
+{x:925430400,y:73.9},
+{x:928108800,y:74.2},
+{x:930700800,y:73.6},
+{x:933379200,y:73.8},
+{x:936057600,y:73.7},
+{x:938649600,y:73.4},
+{x:941328000,y:72.7},
+{x:943920000,y:72.1},
+{x:946598400,y:72.7},
+{x:949276800,y:73},
+{x:951782400,y:72.6},
+{x:954460800,y:73},
+{x:957052800,y:74.6},
+{x:959731200,y:75.2},
+{x:962323200,y:75},
+{x:965001600,y:75.5},
+{x:967680000,y:74.9},
+{x:970272000,y:75},
+{x:972950400,y:75.2},
+{x:975542400,y:75.1},
+{x:978220800,y:74.8},
+{x:980899200,y:75.2},
+{x:983318400,y:74.9},
+{x:985996800,y:75.1},
+{x:988588800,y:75},
+{x:991267200,y:75.8},
+{x:993859200,y:75.5},
+{x:996537600,y:75.2},
+{x:999216000,y:75},
+{x:1001808000,y:75.1},
+{x:1004486400,y:75.1},
+{x:1007078400,y:74.7},
+{x:1009756800,y:75.4},
+{x:1012435200,y:75.9},
+{x:1014854400,y:75.8},
+{x:1017532800,y:75.8},
+{x:1020124800,y:76.2},
+{x:1022803200,y:76.4},
+{x:1025395200,y:76.4},
+{x:1028073600,y:76.4},
+{x:1030752000,y:76.3},
+{x:1033344000,y:76.6},
+{x:1036022400,y:76.4},
+{x:1038614400,y:76.1},
+{x:1041292800,y:76.3},
+{x:1043971200,y:76.3},
+{x:1046390400,y:75.7},
+{x:1049068800,y:76.8},
+{x:1051660800,y:76.8},
+{x:1054339200,y:77},
+{x:1056931200,y:77.5},
+{x:1059609600,y:77.7},
+{x:1062288000,y:77.7},
+{x:1064880000,y:76.9},
+{x:1067558400,y:77.5},
+{x:1070150400,y:77.5},
+{x:1072828800,y:77.5},
+{x:1075507200,y:77.4},
+{x:1078012800,y:77.8},
+{x:1080691200,y:78.6},
+{x:1083283200,y:79.5},
+{x:1085961600,y:79.6},
+{x:1088553600,y:79.8},
+{x:1091232000,y:79.6},
+{x:1093910400,y:78},
+{x:1096502400,y:78.7},
+{x:1099180800,y:78.1},
+{x:1101772800,y:78.4},
+{x:1104451200,y:78.6},
+{x:1107129600,y:77.6},
+{x:1109548800,y:78.9},
+{x:1112227200,y:79.6},
+{x:1114819200,y:80.4},
+{x:1117497600,y:80.2},
+{x:1120089600,y:79.6},
+{x:1122768000,y:80},
+{x:1125446400,y:79.5},
+{x:1128038400,y:79.5},
+{x:1130716800,y:79.6},
+{x:1133308800,y:79.5},
+{x:1135987200,y:79.5},
+{x:1138665600,y:80},
+{x:1141084800,y:80},
+{x:1143763200,y:80.6},
+{x:1146355200,y:81},
+{x:1149033600,y:81.4},
+{x:1151625600,y:81.3},
+{x:1154304000,y:81.5},
+{x:1156982400,y:81.8},
+{x:1159574400,y:81.9},
+{x:1162252800,y:82.1},
+{x:1164844800,y:82.3},
+{x:1167523200,y:82.6},
+{x:1170201600,y:83.3},
+{x:1172620800,y:83.7},
+{x:1175299200,y:84.6},
+{x:1177891200,y:85.1},
+{x:1180569600,y:85.3},
+{x:1183161600,y:85.4},
+{x:1185840000,y:85.4},
+{x:1188518400,y:85.4},
+{x:1191110400,y:85.5},
+{x:1193788800,y:85.5},
+{x:1196380800,y:85.9},
+{x:1199059200,y:86.2},
+{x:1201737600,y:87.1},
+{x:1204243200,y:87.7},
+{x:1206921600,y:89.6},
+{x:1209513600,y:91.3},
+{x:1212192000,y:92.2},
+{x:1214784000,y:92.1},
+{x:1217462400,y:92.1},
+{x:1220140800,y:92.5},
+{x:1222732800,y:92.2},
+{x:1225411200,y:92.2},
+{x:1228003200,y:92.6},
+{x:1230681600,y:94.9},
+{x:1233360000,y:95.3},
+{x:1235779200,y:95.3},
+{x:1238457600,y:95.3},
+{x:1241049600,y:96},
+{x:1243728000,y:97},
+{x:1246320000,y:97.6},
+{x:1248998400,y:98.2},
+{x:1251676800,y:97.6},
+{x:1254268800,y:97.3},
+{x:1256947200,y:97.7},
+{x:1259539200,y:97.4},
+{x:1262217600,y:97.1},
+{x:1264896000,y:97.6},
+{x:1267315200,y:97.6},
+{x:1269993600,y:97.9},
+{x:1272585600,y:100.6},
+{x:1275264000,y:101.6},
+{x:1277856000,y:100.9},
+{x:1280534400,y:100.4},
+{x:1283212800,y:100.5},
+{x:1285804800,y:100.6},
+{x:1288483200,y:100.8},
+{x:1291075200,y:100.8},
+{x:1293753600,y:100.6},
+{x:1296432000,y:101},
+{x:1298851200,y:101.5},
+{x:1301529600,y:102.5},
+{x:1304121600,y:104.2},
+{x:1306800000,y:104.6},
+{x:1309392000,y:105.2},
+{x:1312070400,y:105.3},
+{x:1314748800,y:104.9},
+{x:1317340800,y:104.9},
+{x:1320019200,y:104},
+{x:1322611200,y:104},
+{x:1325289600,y:104.4},
+{x:1327968000,y:105.9},
+{x:1330473600,y:107.4},
+{x:1333152000,y:108.5},
+{x:1335744000,y:110.5},
+{x:1338422400,y:110.8},
+{x:1341014400,y:110.6},
+{x:1343692800,y:110.9},
+{x:1346371200,y:111.1},
+{x:1348963200,y:111},
+{x:1351641600,y:111.2},
+{x:1354233600,y:110.8},
+{x:1356912000,y:110.9},
+{x:1359590400,y:111.4},
+{x:1362009600,y:112.1},
+{x:1364688000,y:112.1},
+{x:1367280000,y:111.8},
+{x:1369958400,y:111.9},
+{x:1372550400,y:111.8},
+{x:1375228800,y:111.8},
+{x:1377907200,y:111.8},
+{x:1380499200,y:111.6},
+{x:1383177600,y:111.6},
+{x:1385769600,y:111.6},
+{x:1388448000,y:111.5},
+{x:1391126400,y:111.4}
+]}
+]});
+
+var x_axis = new Rickshaw.Graph.Axis.Time( { 
+  graph: graph,
+} );
+
+var y_axis = new Rickshaw.Graph.Axis.Y( {
+        graph: graph,
+        element: document.getElementById('y_axis'),
+} );
+
+var hoverDetail = new Rickshaw.Graph.HoverDetail( {
+    graph: graph,
+    xFormatter: function(x) { return moment.unix(x).format('MMM YYYY') }
+} );
+
+graph.render();
+    </script>
+
+  </body>
+</html>
